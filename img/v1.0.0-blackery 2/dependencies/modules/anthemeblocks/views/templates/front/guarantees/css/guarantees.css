@@ -1,0 +1,21 @@
+.checkout-guarantee-block {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 15px 18px;
+}
+
+.checkout-guarantee-block span {
+    position: absolute;
+    top: -10px;
+    left: 19px;
+    background: #fff;
+    padding: 0 10px;
+    font-size: 14px;
+    letter-spacing: .15px;
+}
+.checkout-guarantee-block img {
+    max-width: 100%;
+}

@@ -1,0 +1,194 @@
+
+
+.advantages-type-1 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.advantages-type-1-item {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages-type-1>.advantages-type-1-link,
+.advantages-type-1>.advantages-type-1-item {
+    width: 100%;
+    max-width: 255px;
+    margin: 21px 0 17px;
+}
+
+.advantages-type-1-item-fixd_w {
+    flex-basis: 25%;
+}
+.advantages-img-wrapper {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 968px) {
+    .advantages-type-1-item-fixd_w {
+        flex-basis: 50%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .advantages-type-1>.advantages-type-1-link,
+    .advantages-type-1>.advantages-type-1-item {
+        width: 100%;
+    }
+}
+
+.advantages-type-1-title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.advantages-type-1-link:hover {
+    text-decoration: none;
+    
+}
+
+.advantages-type-1 .advantages-type-1-desc {
+    margin-left: 23px;
+    flex: 1 1;
+}
+
+.advantages-type-1-desc p {
+    line-height: 24px;
+    font-size: 13px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.advantages-type-1-center .advantages-type-1-item {
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 15px 35px;
+    text-align: center;
+    height: 128px;
+}
+
+.advantages-type-1-img {
+    max-width: 48px;
+    height: auto;
+}
+
+.advantages-type-1-center .advantages-type-1-desc {
+    margin: 0 0 0 15px;
+}
+
+.additional-text-type-1 {
+    -webkit-box-flex: 1;
+    flex: 1 1 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.additional-text-type-1-hidden {
+    display: none;
+}
+
+.additional-text-type-1-title {
+    margin-bottom: 55px;
+    text-transform: uppercase;
+}
+
+.advantages-type-1 .advantages-type-1-img {
+    border: 0;
+}
+
+@media (max-width: 1200px) {
+    .advantages-type-1 {
+        flex-wrap: wrap;
+    }
+    .advantages-type-1>.advantages-type-1-link {
+        max-width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .advantages-type-1>.advantages-type-1-link {
+        max-width: 255px;
+    }
+}
+/*** effect ***/
+.advantages-type-1  .advantages-img-wrapper {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.advantages-type-1  .advantages-img-wrapper img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.advantages-type-1  .advantages-type-1-item:hover .advantages-img-wrapper img {
+    -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
+    animation-name: hvr-icon-bob-float, hvr-icon-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+@-webkit-keyframes hvr-icon-bob {
+    0% {
+        -webkit-transform:translateY(-6px);transform:translateY(-6px)
+    }
+    50% {
+        -webkit-transform:translateY(-2px);transform:translateY(-2px)
+    }
+    100% {
+        -webkit-transform:translateY(-6px);transform:translateY(-6px)
+    }
+}
+@keyframes hvr-icon-bob {
+    0% {
+        -webkit-transform:translateY(-6px);transform:translateY(-6px)
+    }
+    50% {
+        -webkit-transform:translateY(-2px);transform:translateY(-2px)
+    }
+    100% {
+        -webkit-transform:translateY(-6px);transform:translateY(-6px)
+    }
+}
+@-webkit-keyframes hvr-icon-bob-float {
+    100% {
+        -webkit-transform:translateY(-6px);
+        transform:translateY(-6px)
+    }
+}
+@keyframes hvr-icon-bob-float {
+    100% {
+        -webkit-transform:translateY(-6px);
+        transform:translateY(-6px)
+    }
+}

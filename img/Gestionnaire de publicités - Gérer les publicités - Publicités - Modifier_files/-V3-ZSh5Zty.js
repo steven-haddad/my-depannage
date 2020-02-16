@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["I2KPK"]); }
+
+__d("AdsPlacementEditorLoggerPlugin",["AdsMediaFormat","AdsPlacementEditorLogger","first","immutable"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g=function(a){if(a==="image")return b("AdsMediaFormat").IMAGE;else return b("AdsMediaFormat").VIDEO};a={log:function(a){var c;a.assetGroup!=null?c=b("immutable").List([a.assetGroup]):a.assetGroupForAssetKey!=null&&(c=a.assetGroupForAssetKey);b("AdsPlacementEditorLogger").logOpenEvent(b("first")(a.adgroupIDs)||"",a.entryPoint,g(a.format),c)}};e.exports=a}),null);

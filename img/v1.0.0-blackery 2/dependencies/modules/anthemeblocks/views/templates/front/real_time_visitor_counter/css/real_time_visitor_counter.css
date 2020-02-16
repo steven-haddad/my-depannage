@@ -1,0 +1,20 @@
+.visitors-block {
+    margin-top: 25px;
+}
+.visitors-block .visitors-block-text .label {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #818181;
+}
+.visitors-counter {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 14px;
+    margin: 0 2px 0 3px;
+    background-color: #313131;
+    color: #fff;
+}
+.visitors-block .visitors-block-text .label_visitors {
+    font-size: 13px;
+    color: #313131;
+}

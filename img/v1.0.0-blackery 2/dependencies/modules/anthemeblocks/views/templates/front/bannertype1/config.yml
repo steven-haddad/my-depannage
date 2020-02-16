@@ -1,0 +1,9 @@
+name: Banner Type 1 (img)
+description: 
+enabled_text: false
+required_text: false
+enabled_image: true
+enabled_link: true
+css:
+  -
+  path: views/templates/front/bannertype1/css/bannertype1.css

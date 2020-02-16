@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["TxnGh"]); }
+
+__d("AdsBulkEditAdgroupLoggingFieldNames",[],(function(a,b,c,d,e,f){"use strict";a={CALL_TO_ACTION:"call_to_action",CATALOG_ASSET_FORMAT:"catalog_asset_format",CUSTOM_OVERLAY:"custom_overlay",DISPLAY_URL:"display_url",EXISTING_CALL_TO_ACTION:"existing_call_to_action",HEADLINE:"headline",INSTAGRAM_ACTOR:"instagram_actor",LANDING_VIEW:"landing_view",LINK_DESCRIPTION:"link_description",LINK_TOGGLE:"link_toggle",MESSAGE:"message",PAGE_SELECTOR:"page_selector",WEBSITE_URL:"website_url"};e.exports=a}),null);

@@ -1,0 +1,127 @@
+/**
+ * 2007-2013 PrestaShop
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ *         DISCLAIMER   *
+ * *************************************** */
+ /* Do not edit or add to this file if you wish to upgrade Prestashop to newer
+ * versions in the future.
+ * ****************************************************
+ *
+ *  @author     Anvanto (anvantoco@gmail.com)
+ *  @copyright  anvanto.com
+ *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+ /* Css */
+.an_brandslider-title {
+ font-size: 16px;
+ color: #333;
+ margin: 0px 0px 10px 0px;
+ padding: 15px 0 15px 15px;
+ border-bottom: 1px solid #ccc;
+}
+.an_brandslider-item img {
+  max-width: 100%;
+  width: auto !important;
+  margin: 0 auto;
+  border: none;
+}
+.an_brandslider-item {
+  text-align: center;
+}
+.an_brandslider-item span {
+ margin-top: 5px;
+ display: block
+}
+#an_brandslider-block .owl-prev,
+#an_brandslider-block .owl-next {
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 17.5px);
+  cursor: pointer;
+  color: #D6D6D6;
+}
+#an_brandslider-block .owl-prev:hover,
+#an_brandslider-block .owl-next:hover {
+  color: #869791;
+}
+
+#an_brandslider-block .owl-prev .disabled,
+#an_brandslider-block .owl-next .disabled {
+  opacity: .5;
+  cursor: default;
+}
+#an_brandslider-block .owl-prev .material-icons,
+#an_brandslider-block .owl-next .material-icons {
+  font-size: 35px;
+}
+
+#an_brandslider-block .owl-prev {
+  left: 0px;
+}
+
+#an_brandslider-block .owl-next {
+  right: 0px;
+}
+
+#an_brandslider-block  .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791;
+}
+#an_brandslider-block  .owl-dots {
+  margin: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#an_brandslider-block  .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+}
+
+#an_brandslider-block  .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -moz-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+   transition: opacity 200ms ease;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.an_brandslider-icon {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+font-size: 25px;
+}
+.an_brandslider-icon-prev:before {
+    content: "\f104";
+}
+.an_brandslider-icon-next:before {
+    content: "\f105";
+}
+#an_brandslider-block .owl-stage-outer.disabled .owl-prev,
+#an_brandslider-block .owl-stage-outer.disabled .owl-next {
+  display: none;
+}

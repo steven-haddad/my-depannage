@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["NBsfE"]); }
+
+__d("StorifyInitialTemplateDataLoadedAction",["Laminar","StorifyInitialTemplateDataLoadedReducerPlugin","StorifyInitialTemplateDataLoadedDataProvider"],(function(a,b,c,d,e,f){"use strict";a=b("Laminar").__createAction(function(){return[b("Laminar").__createReducer(b("StorifyInitialTemplateDataLoadedReducerPlugin"),b("StorifyInitialTemplateDataLoadedDataProvider"),{})]},function(){return[]},"StorifyInitialTemplateDataLoadedActionPlugin");e.exports=a}),null);

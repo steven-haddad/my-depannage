@@ -1,0 +1,15 @@
+name: Size guide
+description: 
+enabled_text: true
+required_text: false
+enabled_image: false
+enabled_link: false
+css:
+  -
+  path: views/templates/front/sizeguide/css/sizeguide.css
+js:
+  -
+    path: views/templates/front/sizeguide/js/sizeguide.js
+    priority: 250
+    media: screen
+    server: local

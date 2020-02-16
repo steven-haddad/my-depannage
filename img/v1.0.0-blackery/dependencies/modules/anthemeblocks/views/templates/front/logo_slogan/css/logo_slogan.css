@@ -1,0 +1,17 @@
+.logo_slogan-img {
+    margin: 12px 0 26px -1px;
+}
+.logo_slogan-content p {
+    color: #fff;
+    line-height: 24px;
+    max-width: 90%;
+    opacity: .5;
+}
+@media (max-width: 767px) {
+    .logo_slogan-img {
+        padding: 0 15px;
+    }
+    .logo_slogan-content p {
+        padding: 0 15px;
+    }
+}

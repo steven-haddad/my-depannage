@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>anscrolltop</name>
+    <displayName><![CDATA[AN Scroll Top Button Premium]]></displayName>
+    <version><![CDATA[1.0.7]]></version>
+    <description><![CDATA[A scroll top top button helps a user to get back quickly to the top of the page.]]></description>
+    <author><![CDATA[anvanto]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall this module?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,9 @@
+name: Block Reassurance
+description: 
+enabled_text: false
+required_text: false
+enabled_link: false
+enabled_image: false
+css:
+  - views/templates/front/reassurance/css/reassurance.css  
+

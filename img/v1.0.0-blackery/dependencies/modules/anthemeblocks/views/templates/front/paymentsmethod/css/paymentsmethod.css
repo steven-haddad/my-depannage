@@ -1,0 +1,9 @@
+
+.anthemeblocks-footer-payments li {
+ float: left;
+ margin-right: 5px;
+}
+.anthemeblocks-footer-payments img {
+    max-width: 40px;
+    max-height: 30px;
+}

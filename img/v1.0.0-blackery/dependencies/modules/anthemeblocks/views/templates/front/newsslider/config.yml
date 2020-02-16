@@ -1,0 +1,100 @@
+name: News slider
+description: 
+enabled_text: false
+required_text: false
+enabled_link: false
+enabled_image: false
+css:
+  -
+    path: views/css/owl.carousel.min.css
+    priority: 200
+    position: head
+    server: local
+  -
+    path: views/templates/front/newsslider/css/newsslider.css
+    priority: 200
+    position: head
+    server: local    
+js:
+  -
+    path: views/templates/front/newsslider/js/init.slider.js
+    priority: 250
+    media: screen
+    server: local
+fields:
+  -
+    col: 1
+    type: switch
+    name: loop
+    label: Loop
+    default_value: 1
+    values:
+      -
+        id: active_on
+        value: 1
+        label: Enabled
+      -
+        id: active_off
+        value: 0
+        label: Disabled
+  -
+    col: 1
+    type: switch
+    name: nav
+    label: Nav
+    default_value: 1
+    values:
+      -
+        id: active_on
+        value: 1
+        label: Enabled
+      -
+        id: active_off
+        value: 0
+        label: Disabled
+  -
+    col: 1
+    type: switch
+    name: autoplay
+    label: Autoplay
+    default_value: 0
+    values:
+      -
+        id: active_on
+        value: 1
+        label: Enabled
+      -
+        id: active_off
+        value: 0
+        label: Disabled  
+  - 
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: smartSpeed
+    label: smartSpeed
+    required: true   
+    default_value: 1000 
+  - 
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: autoplayTimeout
+    label: autoplayTimeout
+    required: true   
+    default_value: 5000       
+  -
+    col: 1
+    type: switch
+    name: mobile
+    label: Mobile
+    default_value: 1
+    values:
+      -
+        id: active_on
+        value: 1
+        label: Enabled
+      -
+        id: active_off
+        value: 0
+        label: Disabled

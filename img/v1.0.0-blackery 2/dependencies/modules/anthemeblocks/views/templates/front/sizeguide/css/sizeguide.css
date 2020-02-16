@@ -1,0 +1,117 @@
+.an_sizeguide .sizeguide-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+}
+.an_sizeguide p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 23px;
+}
+.an_sizeguide h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.size-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+.size-table {
+    font-size: 13px;
+    line-height: 17px;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+.size-table th, .size-table tr:nth-child(2) td {
+    border-top-color: #141414;
+}
+.size-table th {
+    background-color: #141414;
+    color: #fff;
+}
+.size-table tr:first-child th:first-child {
+    width: 200px;
+}
+.size-table td,
+.size-table th {
+    height: 34px;
+    padding: 8px 15px !important;
+    vertical-align: middle !important;
+}
+.size-table td {
+    border-top: 1px solid #dee2e6;
+    border-color: #e5e5e5;
+}
+
+/*** modal ***/
+.sg-open {
+    overflow: hidden;
+    
+}
+.sg-cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 100;
+    
+}
+  
+.sg-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    overflow-x: none;
+    overflow-y: auto;
+    padding: 20px;
+    z-index: 200;
+    width: 100%;
+    max-width: 100%;
+    
+}
+.an_sizeguide {
+    margin: 0 auto;
+    max-width: 785px;
+    width: 100%;
+    display: none;
+    min-width: 200px;
+    position: relative;
+    background-color: #FAFAFA;
+    z-index: 300;
+    padding: 30px 15px;
+}
+.sg-btn-close {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.open-modal-btn {
+    display: inline-block;
+    cursor: pointer;
+	text-decoration: underline;
+}
+.open-modal-btn:hover {
+    color: #949494;
+	text-decoration: none;
+}

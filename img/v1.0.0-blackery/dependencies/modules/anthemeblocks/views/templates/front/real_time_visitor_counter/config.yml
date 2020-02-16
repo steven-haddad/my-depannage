@@ -1,0 +1,56 @@
+name: Real time visitor counter
+description: 
+enabled_text: false
+required_text: false
+enabled_image: false
+enabled_link: false
+css:
+  -
+  path: views/templates/front/real_time_visitor_counter/css/real_time_visitor_counter.css
+js:
+  -
+    path: views/templates/front/real_time_visitor_counter/js/real_time_visitor_counter.js
+    priority: 250
+    media: screen
+    server: local
+fields:
+  - 
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: minValue
+    label: Min Value
+    required: true   
+    default_value: 5
+  - 
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: maxValue
+    label: Max Value
+    required: true   
+    default_value: 25
+  - 
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: strokeValue
+    label: Stroke Value
+    required: true   
+    default_value: 8
+  - 
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: minInterval
+    label: Min Interval
+    required: true   
+    default_value: 2
+  - 
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: maxInterval
+    label: Max Interval
+    required: true   
+    default_value: 6

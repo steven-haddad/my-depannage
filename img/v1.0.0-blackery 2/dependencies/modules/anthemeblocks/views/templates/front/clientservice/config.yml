@@ -1,0 +1,15 @@
+name: Client Service
+description: 
+enabled_text: true
+required_text: false
+enabled_image: false
+enabled_link: false
+css:
+  -
+  path: views/templates/front/clientservice/css/clientservice.css
+js:
+  -
+    path: views/templates/front/clientservice/js/clientservice.js
+    priority: 250
+    media: screen
+    server: local

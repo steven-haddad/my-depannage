@@ -1,0 +1,15 @@
+name: Delivery & Return
+description: 
+enabled_text: true
+required_text: false
+enabled_image: false
+enabled_link: false
+css:
+  -
+  path: views/templates/front/delivery_return/css/delivery_return.css
+js:
+  -
+    path: views/templates/front/delivery_return/js/delivery_return.js
+    priority: 250
+    media: screen
+    server: local

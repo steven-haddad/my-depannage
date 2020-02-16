@@ -1,0 +1,9 @@
+name: Guarantees
+description: 
+enabled_text: false
+required_text: false
+enabled_image: true
+enabled_link: false
+css:
+  -
+  path: views/templates/front/guarantees/css/guarantees.css

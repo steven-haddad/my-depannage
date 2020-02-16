@@ -1,0 +1,40 @@
+.notification_cookie {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: rgba(0,0,0,.8);
+    z-index: 30;
+    display: none;
+    width: 400px;
+    max-width: calc(100% - 60px);
+}
+.notification_cookie-content {
+    padding: 20px;
+}
+.notification_cookie p {
+    color: #fff;
+    text-align: left;
+    line-height: 1.5;
+}
+.notification_cookie-action {
+    text-align: right;
+    cursor: default;
+}
+.notification_cookie a {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #bebebe;
+}
+.notification_cookie span {
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+}
+.notification_cookie i {
+    margin-left: 5px;
+    font-size: 17px;
+    line-height: 16px;
+}

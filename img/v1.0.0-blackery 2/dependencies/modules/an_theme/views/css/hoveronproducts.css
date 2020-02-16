@@ -1,0 +1,19 @@
+.img_hover_change{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.img_hover_change.cover{
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity .9s;
+}
+.img_hover_change.only_one{
+    opacity: 1!important;
+    z-index: 0;
+}
+.thumbnail-container:hover .img_hover_change.cover{
+    opacity: 0;
+}

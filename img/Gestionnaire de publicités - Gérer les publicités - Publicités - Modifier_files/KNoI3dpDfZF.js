@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["DO9X8"]); }
+
+__d("MAdPreviewIFrameResizer",["DOM","Stratcom","$","ge","lowerFacebookDomain"],(function(a,b,c,d,e,f,g,h,i,j,k){__p&&__p();a={resize:function(a){__p&&__p();h.listen("m:viewport:iframe-update-complete",null,function(){__p&&__p();var b=j("ad_preview");if(!b)return;k();if(!parent||!parent.Arbiter)return;var c=b.offsetHeight;if(c===0)return;var d=c+"px";document.body.style.minHeight=d;i("root").style.minHeight=d;i("viewport").style.minHeight=d;d=g.scry(b,"article","story-div")||[];b=d[0];parent.Arbiter.inform("iframe/resize",{frame:a,frameHeight:c,storyHeight:b?b.clientHeight:void 0},"state")}),h.invoke("m:viewport:iframe-update-complete")}};e.exports=a}),null);

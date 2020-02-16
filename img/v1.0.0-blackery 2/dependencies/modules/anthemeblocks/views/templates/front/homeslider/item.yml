@@ -1,0 +1,23 @@
+name: Home slider - item
+description: 
+enabled_text: true
+required_text: false
+enabled_link: true
+enabled_image: true
+
+fields:
+  -
+    col: 1
+    type: switch
+    name: button
+    label: Hide the button
+    default_value: 0
+    values:
+      -
+        id: active_on
+        value: 1
+        label: Enabled
+      -
+        id: active_off
+        value: 0
+        label: Disabled

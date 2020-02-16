@@ -1,0 +1,24 @@
+name: Notification (cookie)
+description: 
+enabled_text: true
+required_text: false
+enabled_image: false
+enabled_link: true
+fields:
+  -
+    col: 2
+    type: text
+    validator: isUnsignedInt
+    name: block_width
+    label: Notification width
+    required: true
+    default_value: "435"
+css:
+  -
+    path: views/templates/front/notification_cookie/css/notification_cookie.css
+js:
+  -
+    path: views/templates/front/notification_cookie/js/notification_cookie.js
+    priority: 250
+    media: screen
+    server: local

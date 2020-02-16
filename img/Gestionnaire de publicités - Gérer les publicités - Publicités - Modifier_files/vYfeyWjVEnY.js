@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["n6zWi"]); }
+
+__d("AdsMultiLanguagePlacementUtils",["AdsPlacementPositionPlugins"],(function(a,b,c,d,e,f){"use strict";a={getPlatformAndPlacementLabels:function(a){var c=b("AdsPlacementPositionPlugins").getArray().filter(function(b){return a.includes(b.key)});return c.map(function(a){return a.nameWithPlatform}).filter(function(a){return a!==void 0})}};e.exports=a}),null);

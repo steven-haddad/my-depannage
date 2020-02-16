@@ -1,0 +1,292 @@
+name: blackery
+display_name: Blackery
+version: 1.0.0
+theme_key: none
+author:
+  name: "Anvanto Team"
+  email: "anvantoco@gmail.com"
+  url: "https://anvanto.com"
+
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+dependencies:
+  modules:
+    - an_theme
+    - anproductextratabs
+    - anscrolltop
+    - anthemeblocks
+    - an_megamenu
+    - anblog
+    - an_productattributes
+    - an_brandslider
+    - an_wishlist
+    
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+#  css:
+#    all:
+#      - id: custom-lib-style
+#        path: assets/css/custom-lib.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+#  js:
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+  js:
+    all:
+      - id: cookie-js
+        path: assets/js/jquery.cookie.min.js
+        
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+  modules:
+   to_enable:
+     - ps_linklist
+     - anproductextratabs
+     - anscrolltop
+     - an_theme
+     - anthemeblocks
+     - an_megamenu
+     - anblog
+     - an_productattributes
+     - an_brandslider
+     - an_wishlist
+   to_disable:
+     - ps_imageslider
+  hooks:
+    modules_to_hook:
+      displayNav1:
+        - ps_languageselector
+        - ps_currencyselector
+        - anthemeblocks
+      displayNav2:
+        - ps_customersignin
+        - an_wishlist
+        - ps_shoppingcart
+        - anthemeblocks
+      displayTop:
+        - an_megamenu
+        - ps_searchbar
+        - anthemeblocks
+      displayHome:
+        - anthemeblocks
+      displayHome2:
+        - anthemeblocks
+      displayFooterBefore:
+        - anthemeblocks
+      displayFooterLogo:
+        - anthemeblocks
+      displayLogoAfter:
+        - ps_contactinfo
+      displayFooter:
+        - ps_linklist
+        - ps_socialfollow
+        - anscrolltop 
+        - anthemeblocks
+      displayProductListReviews:
+        - an_wishlist
+      displayAdminProductsExtra:
+        - ~
+        - anproductextratabs
+      displayProductExtraContent:
+        - anproductextratabs 
+      displayLeftColumnBottom:
+        - anthemeblocks
+      displayLeftColumn:
+        - ps_categorytree
+        - ps_facetedsearch
+        - anthemeblocks
+      displaySearch:
+        - ps_searchbar
+        - anthemeblocks 
+      displayMobileMenu:
+        - an_megamenu
+      displayMobileSearch:
+        - ps_searchbar
+      displayProductAdditionalInfo:
+        - anthemeblocks
+        - an_wishlist
+      displayProductAdditionalInfo2:
+        - anthemeblocks
+      displayReassurance:
+        - anthemeblocks
+      displayProductGuarantee:
+        - anthemeblocks
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+        - anthemeblocks 
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+        - anthemeblocks
+      displayBeforeBodyClosingTag:
+        - ~
+        - anthemeblocks
+      displayCartExtraProductActions:
+        - ~
+        - anthemeblocks
+      displayCopyrightContainer:
+        - ~
+        - anthemeblocks
+      displayCustomerAccount:
+        - ~
+        - anthemeblocks
+        - an_wishlist
+      displayCustomerLoginFormAfter:
+        - ~
+        - anthemeblocks
+      displayFooterProduct:
+        - ~
+        - anthemeblocks
+      displayHomeAfter:
+        - ~
+        - anthemeblocks
+      displayHomeBefore:
+        - ~
+        - anthemeblocks
+      displayLeftColumnProduct:
+        - ~
+        - anthemeblocks
+      displayMyAccountBlock:
+        - ~
+        - anthemeblocks
+      displayNav:
+        - ~
+        - anthemeblocks
+      displayNavFullWidth:
+        - ~
+        - anthemeblocks
+      displayOrderConfirmation:
+        - ~
+        - anthemeblocks
+      displayPaymentByBinaries:
+        - ~      
+        - anthemeblocks
+      displayPaymentTop:
+        - ~      
+        - anthemeblocks
+      displayRightColumn:
+        - ~      
+        - anthemeblocks
+      displayRightColumnProduct:
+        - ~      
+        - anthemeblocks
+      displayShoppingCart:
+        - ~
+        - anthemeblocks
+      displayShoppingCartFooter:
+        - ~
+        - anthemeblocks
+        - an_wishlist
+      displaySliderContainerWidth:
+        - ~
+        - anthemeblocks
+      displayTopColumn:
+        - ~
+        - anthemeblocks
+      displayBackOfficeHeader:
+        - ~
+        - anthemeblocks
+        - anscrolltop
+      displayWrapperTop:
+        - anthemeblocks
+      displayWrapperMiddle:
+        - an_brandslider
+        - anthemeblocks
+      displayWrapperBottom:
+        - anthemeblocks
+      displayHomeSliderFullWidth:
+        - anthemeblocks
+      displayFooterANLiveEditor:
+        - ~
+      displayProductViewers:
+        - anthemeblocks
+      displayLoginDesc:
+        - anthemeblocks
+
+  image_types:
+    cart_default:
+      width: 86
+      height: 115
+      scope: [products]
+    checkout_default:
+      width: 160
+      height: 213
+      scope: [products]
+    small_default:
+      width: 98
+      height: 98
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 452
+      height: 452
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 570
+      height: 760
+      scope: [products]
+    large_default:
+      width: 600
+      height: 800
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 141
+      height: 180
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+    menu_default:
+      width: 200
+      height: 267
+      scope: [products, categories, manufacturers, suppliers]
+    slider_photo:
+      width: 69
+      height: 92
+      scope: [products, categories, manufacturers, suppliers]
+    brand_default:
+      width: 160
+      height: 80
+      scope: [manufacturers, suppliers]
+    search_default:
+      width: 198
+      height: 264
+      scope: [products]
+
+
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    contact: layout-left-column

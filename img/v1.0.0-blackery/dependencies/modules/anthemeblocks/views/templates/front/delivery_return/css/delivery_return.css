@@ -1,0 +1,82 @@
+.an_delivery_return .delivery_return-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+}
+.an_delivery_return p {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 23px;
+}
+.an_delivery_return h3 {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/*** modal ***/
+.delivery_return-sg-open {
+    overflow: hidden;
+    
+}
+.delivery_return-sg-cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 100;
+    
+}
+  
+.delivery_return-sg-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    overflow-x: none;
+    overflow-y: auto;
+    padding: 20px;
+    z-index: 200;
+    width: 100%;
+    max-width: 100%;
+    
+}
+.an_delivery_return {
+    margin: 0 auto;
+    max-width: 785px;
+    width: 100%;
+    display: none;
+    min-width: 200px;
+    position: relative;
+    background-color: #FAFAFA;
+    z-index: 300;
+    padding: 30px;
+}
+.delivery_return-sg-btn-close {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.delivery_return-open-modal-btn {
+    display: inline-block;
+    cursor: pointer;
+	text-decoration: underline;
+}
+.delivery_return-open-modal-btn:hover {
+    color: #949494;
+	text-decoration: none;
+}

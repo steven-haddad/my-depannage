@@ -1,0 +1,66 @@
+.anthemeblocks-reassurance figure {
+  margin: 0;
+  display: inline-block;
+  width: 36%;
+}
+.anthemeblocks-reassurance-item a {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+.anthemeblocks-reassurance-item span {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+}
+.anthemeblocks-reassurance {
+  padding: 25px 0;
+}
+
+.anthemeblocks-reassurance ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+.anthemeblocks-reassurance ul li {
+  margin-bottom: 10px;
+}
+#cart .anthemeblocks-reassurance ul li,
+#checkout .anthemeblocks-reassurance ul li {
+  width: 100%;
+}
+.anthemeblocks-reassurance ul li {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.anthemeblocks-reassurance ul li img {
+  max-width: 200px;
+}
+
+@media (max-width: 1199px){
+	.anthemeblocks-reassurance ul li {
+	  width: 100%;
+	}
+}
+@media (max-width: 991px) {
+  #cart .anthemeblocks-reassurance ul li, 
+  #checkout .anthemeblocks-reassurance ul li {
+    width: 32%;
+  }
+}
+@media (max-width: 767px) {
+  #cart .anthemeblocks-reassurance ul li, 
+  #checkout .anthemeblocks-reassurance ul li {
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+name: Custom text
+description: 
+enabled_text: true
+required_text: false
+enabled_link: false
+enabled_image: false
+
+css:
+ -
+   path: views/templates/front/customtext/css/customtext.css
+   priority: 200
+   position: head
+   server: local

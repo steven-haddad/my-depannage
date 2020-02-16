@@ -1,0 +1,63 @@
+.about_us {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+.about_us-img {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_us-img img {
+    max-width: 100%;
+}
+.about_us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    margin-left: 65px;
+}
+.about_us-content p {
+    line-height: 24px;
+    margin: 0 0 24px 2px;
+    max-width: 600px;
+    letter-spacing: .3px;
+}
+.about_us-title { 
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.333;
+    letter-spacing: -.2px;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+}
+.about_us-text {
+    max-width: 600px;
+    margin-bottom: 8px;
+}
+.about_us-content .btn-primary {
+    padding: 14px 35px 13px 34px;
+}
+.about_us-content .an_link-block {
+    margin-bottom: 7px;
+}
+@media (max-width: 991px) {
+    .about_us {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .about_us-img {
+        height: auto;
+       
+    }
+    .about_us-img img {
+        margin: 0;
+    }
+    .about_us-content {
+        margin-left: 0;
+    }
+}

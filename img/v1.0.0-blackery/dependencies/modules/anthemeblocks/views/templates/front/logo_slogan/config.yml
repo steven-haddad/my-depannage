@@ -1,0 +1,9 @@
+name: Logo with slogan
+description: 
+enabled_text: true
+required_text: false
+enabled_image: true
+enabled_link: false
+css:
+  -
+  path: views/templates/front/logo_slogan/css/logo_slogan.css

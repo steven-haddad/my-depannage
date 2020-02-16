@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["ADtIJ"]); }
+
+__d("AdsDataFileCustomAudienceUsageTypes",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({DFCA_CREATION_OR_UPDATE:"data_file_custom_audience_creation_or_update",AD_SET_MUTATION:"ad set",SAVED_AUDIENCE_MUTATION:"saved audience",LOOKALIKE_MUTATION:"lookalike audience",AD_SET_WITH_ISSUES:"campaign",AUDIENCE_OVERLAP:"audience overlaps"})}),null);

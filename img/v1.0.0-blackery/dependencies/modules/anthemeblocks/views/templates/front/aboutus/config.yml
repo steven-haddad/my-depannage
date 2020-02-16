@@ -1,0 +1,9 @@
+name: About us
+description: 
+enabled_text: true
+required_text: false
+enabled_image: true
+enabled_link: true
+css:
+  -
+  path: views/templates/front/aboutus/css/aboutus.css

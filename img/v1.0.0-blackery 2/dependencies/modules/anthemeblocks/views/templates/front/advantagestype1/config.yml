@@ -1,0 +1,10 @@
+name: Advantages and Additional Text. Type 1
+description: 
+enabled_text: false
+required_text: false
+enabled_image: false
+enabled_link: false
+css:
+  -
+  path: views/templates/front/advantagestype1/css/advantagestype1.css
+
