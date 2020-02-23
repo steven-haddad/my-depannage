@@ -888,6 +888,10 @@ contact
     color: #E31F25 !important;
     font-weight: 400;
 }
+
+
+
+
 /***********************************
 ************************************
 Responsive media queries
@@ -1071,5 +1075,6 @@ h2.bnr-headline{
 h3.bnr-info{
     font-size: 14px;
 }
+
 
 }
