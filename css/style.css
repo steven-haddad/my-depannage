@@ -418,6 +418,10 @@ h2.bnr-sub-title
     color: white;
 }
 
+#pictures h3 {
+    color: white !important;
+}
+
 #pictures img {
     margin-top: -30px;
 }
