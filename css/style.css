@@ -412,6 +412,19 @@ h2.bnr-sub-title
     padding: 20px 0;   
 }
 
+#pictures {
+    background-color: #233974;
+    padding: 10px;
+    color: white;
+}
+
+#pictures h3 {
+    color: white !important;
+}
+
+#pictures img {
+    margin-top: -30px;
+}
 
 .rslides {
     position: relative;
@@ -422,30 +435,30 @@ h2.bnr-sub-title
     margin: 0;
     margin: auto;
     height: 600px;
-    }
+}
 
-  .rslides li {
+.rslides li {
     -webkit-backface-visibility: hidden;
     position: absolute;
     display: none;
     width: 100%;
     left: 0;
     top: 0;
-    }
+}
   
-  .rslides li:first-child {
+.rslides li:first-child {
     position: relative;
     display: block;
     float: left;
-    }
+}
   
-  .rslides img {
+.rslides img {
     display: block;
     height: auto;
     float: left;
     width: 100%;
     border: 0;
-    }
+}
 /***********************************
 ************************************
 Videos
