@@ -103,6 +103,9 @@
                   <li class="">
                     <a href="#informations">Informations</a>
                   </li>
+                  <li class="">
+                    <a href="#pictures">Nos Réalisations</a>
+                  </li>
                   <li style="text-align:center;">
                     <div class="call-btn btn">
                       <a href="tel:+33622906082">
@@ -167,17 +170,17 @@
                   <p>site sécurisé (https:)</p>
                   <div class="slider-ctr">
                     <div class="slider">
-                      <form action="" method="post" role="form" class="contactFormStepper">
+                      <form action="#" method="post" role="form" class="contactFormStepper">
                         <div class="slider-form slider-one step1">
                           <div class="col-md-12 col-md-12 col-xs-12">
                             <div class="form-group">
                               <i class="fas fa-key"></i>
                               <span class="custom-dropdown custom-dropdown--white">
                                 <select class="custom-dropdown__select" name="status" value="proprietaire">
-                                  <option value="locataire">Electricité</option>
-                                  <option value="locataire">climatisation</option>
-                                  <option value="locataire">Vitrerie</option>
-                                  <option value="locataire">Chauffage</option>
+                                  <option value="Electricité">Electricité</option>
+                                  <option value="Climatisation">climatisation</option>
+                                  <option value="Vitrerie">Vitrerie</option>
+                                  <option value="Chauffage">Chauffage</option>
                                 </select>
                               </span>
                             </div>
@@ -211,7 +214,10 @@
                             </div>
                           </div>
                           <button type="submit" id="submit-form"
-                            class="next second btn btn-primary btn-submit submit-form">SIMULATION</button>
+                            >SIMULATION
+                            </button>
+
+
                         </div>
                       </form>
                       <div class="slider-form slider-three">
@@ -774,6 +780,65 @@
     flFacebookReviews(div);
   </script>
 
+
+
+
+
+<?php
+
+ // Start with PHPMailer class
+use PHPMailer\PHPMailer\PHPMailer;
+require_once './vendor/autoload.php';
+
+
+if(isset($_POST['email'])) {
+$mail = new PHPMailer;
+
+
+
+//Enable SMTP debugging. 
+$mail->SMTPDebug = 0;                               
+//Set PHPMailer to use SMTP.
+$mail->isSMTP();            
+//Set SMTP host name                          
+$mail->Host = "smtp.gmail.com";
+//Set this to true if SMTP host requires authentication to send email
+$mail->SMTPAuth = true;                          
+//Provide username and password     
+$mail->Username = 'sos.depannage.95.epc@gmail.com';                 
+$mail->Password = 'puttzxdyumghzqbo';                           
+//If SMTP requires TLS encryption then set it
+$mail->SMTPSecure = "tls";                           
+//Set TCP port to connect to 
+$mail->Port = 587;                                   
+
+$mail->From = $_POST["email"];
+$mail->FromName = $_POST["name"];
+
+$mail->addAddress("sos.depannage.95.epc@gmail.com", "Recepient Name");
+
+$mail->isHTML(true);
+
+$mail->Subject = "LEAD EN:".$_POST["status"];
+$mail->Body = "<i>Attention LEAD pottentiel</i> nom: ". $_POST["name"].
+"<br>   MAIL:".$_POST["email"].
+"<br>   NUMERO:".$_POST["mobile"].
+"<br>   CP:".$_POST["zipcode"]
+
+;
+$mail->AltBody = "This is the plain text version of the email content";
+
+if(!$mail->send()) 
+{
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} 
+else 
+{
+    echo "Message has been sent successfully";
+}
+}
+
+?>
 </body>
 
 </html>
